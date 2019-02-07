@@ -4977,5 +4977,12 @@
       <field type="int32_t" name="y">Y coordinate of center point.  Coordinate system depends on frame field: local = x position in meters * 1e4, global = latitude in degrees * 1e7.</field>
       <field type="float" name="z" units="m">Altitude of center point. Coordinate system depends on frame field.</field>
     </message>
+
+    <!-- This message should be in special dialect, but I dont know how to switch PX4 to other dialect then common -->
+    <message id="49001" name="ROTOR_FREQUENCY">
+          <description>Rotor Frequency Message in RPM.</description>
+          <field type="float" name="measured_frequency_rpm">Measured Frequency</field>
+          <field type="float" name="estimated_accurancy_rpm	">Estimated Accurancy</field>
+    </message>
   </messages>
 </mavlink>
