@@ -6467,6 +6467,16 @@
       <field type="uint8_t" name="target_component">Component ID</field>
       <field type="uint32_t" name="format" enum="TUNE_FORMAT" display="bitmask">Bitfield of supported tune formats.</field>
     </message>
+    <message id="402" name="RPM">
+      <wip/>
+      <!-- This message is work-in-progress and it can therefore change. It should NOT be used in stable production environments. -->
+      <description>RAW data from RPM sensor.</description>
+      <field type="uint64_t" name="time_usec" units="us">Timestamp (since system boot).</field>
+      <field type="float" name="indicated_frequency_hz">Indicated rotor Frequency in Hz</field>
+      <field type="float" name="estimated_accurancy_hz">estimated accurancy in Hz</field>
+      <field type="float" name="indicated_frequency_rpm">indicated rotor Frequency in Revolution per minute</field>
+      <field type="float" name="estimated_accurancy_rpm">estimated accurancy in Revolution per minute</field>
+    </message>
     <!-- Rover specific messages -->
     <message id="9000" name="WHEEL_DISTANCE">
       <description>Cumulative distance traveled for each reported wheel.</description>
